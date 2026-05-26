@@ -1,0 +1,21 @@
+﻿Indicator,Formula / Calculation,Purpose
+1. Incidence Rate,"'= (Reported_Cases ÷ Population) × 100,000",Measures new cases per population
+2. Prevalence Rate,"'= (Active Cases ÷ Population) × 100,000",Shows ongoing disease burden
+3. Case Fatality Rate (CFR),"'= (Deaths ÷ Reported_Cases) × 100",Severity of disease
+4. Recovery Rate,"'= (Recovered ÷ Reported_Cases) × 100",Effectiveness of treatment
+5. Hospitalization Rate,"'= (Hospitalized ÷ Reported_Cases) × 100",Burden on health system
+6. ICU Admission Rate,"'= (ICU_Admission ÷ Hospitalized) × 100",Critical severity
+7. Quarantine Rate,"'= (Quarantined ÷ Reported_Cases) × 100",Control measures effectiveness
+8. Average Days Hospitalized,"'= AVERAGE(Days_Hospitalized)",Length of hospital stay
+9. Mortality by Age Group,Pivot table: SUM(Deaths) by Age_Group,Age vulnerability
+10. Gender-specific Attack Rate,Pivot table: SUM(Reported_Cases) by Gender,Gender differences
+11. Monthly Case Trend,Pivot table: SUM(Reported_Cases) by Month-Year,Detect outbreak peaks
+12. Seasonal Distribution,Pivot table: SUM(Reported_Cases) by Season,Seasonal patterns
+13. Year-on-Year Growth Rate,"'= ((Cases_current_year – Cases_previous_year) ÷ Cases_previous_year) × 100",Trend analysis
+14. Peak Month Analysis,Identify MAX(Reported_Cases) per disease,Outbreak timing
+15. Outbreak Duration,"'= AVERAGE(Days_Hospitalized + Quarantine Days)",Length of epidemic
+16. Urban vs Rural Ratio,"'= SUM(Cases_Urban) ÷ SUM(Cases_Rural)",Geographic disparity
+17. Province-wise Case Density,"'= SUM(Reported_Cases) ÷ Province Population",Regional burden
+18. Region Code Distribution,Pivot table: SUM(Reported_Cases) by Region_Code,Spatial clustering
+19. Travel-associated Cases,"'= (Cases with Travel_History=1 ÷ Total Cases) × 100",Imported vs local
+20. Vaccination Impact,Compare incidence in Vaccinated vs Non-vaccinated,Preventive effectiveness
